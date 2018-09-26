@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif+JP:300,400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="title">User Survey</h1>
+    <p id="description">Please help us improve our website by taking a few minutes for this user survey.</p>
+    <form action="" id="survey-form">
+        <div class="formbox">
+            <label for="name" id="name-label">Name:</label>
+            <input type="text" name="name" id="name" placeholder="write your name here" required>
+        </div>
+        <div class="formbox">
+            <label for="email" id="email-label">Email:</label>
+            <input type="email" name="email" id="email" placeholder="enter your email here" required>
+        </div>
+        <div class="formbox">
+            <label for="age" id="number-label">Age:</label>
+            <input type="number" name="age" id="number" min="10" max="120" placeholder="let us know your age" required>
+        </div>
+        <div class="formbox">
+            <label>How do you like our site?</label>
+            <select name="evaluation" id="dropdown">
+                <option value="good">I like it</option>
+                <option value="evenbetter">I love it!</option>
+                <option value="notatall">Eat my shorts!</option>
+            </select>
+        </div>
+    </form>
+</body>
+
+</html>
