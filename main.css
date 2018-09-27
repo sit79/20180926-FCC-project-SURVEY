@@ -37,19 +37,28 @@ form .formbox {
   width: 100%;
 }
 form .formbox label,
-form .formbox span {
+form .formbox span,
+form .formbox button {
   display: inline-block;
   width: 30%;
   padding: 0px 10px;
   text-align: right;
 }
+form .formbox p {
+  padding: 0px 10px;
+}
 form .formbox input[type=text],
 form .formbox input[type=email],
-form .formbox input[type=number] {
+form .formbox input[type=number],
+form .formbox input[type=radio],
+form .formbox textarea {
   display: inline-block;
   width: 50%;
   padding: 0px 10px;
   margin-right: 10px;
+}
+form .formbox textarea {
+  rows: 2;
 }
 form option {
   font-family: "Indie Flower", cursive;
