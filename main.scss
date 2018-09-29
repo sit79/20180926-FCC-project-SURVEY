@@ -1,4 +1,5 @@
 $content-bg: yellow;
+
 @mixin myPadding {
     padding: 0px 10px;
 }
@@ -34,11 +35,14 @@ form {
     font-size: 1.1rem;
     background-color: $content-bg;
     padding: 20px 0px;
+
     * {
         margin-bottom: 4px;
     }
+
     .formbox {
         width: 100%;
+
         label,
         span,
         button {
@@ -47,9 +51,11 @@ form {
             @include myPadding;
             text-align: right;
         }
+
         p {
             @include myPadding;
         }
+
         input[type="text"],
         input[type="email"],
         input[type="number"],
@@ -60,10 +66,12 @@ form {
             @include myPadding;
             margin-right: 10px;
         }
+
         textarea {
             rows: 2;
         }
     }
+
     option {
         font-family: 'Indie Flower', cursive;
     }
