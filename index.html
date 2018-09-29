@@ -13,63 +13,65 @@
 
 <body>
     <h1 id="title">User Survey</h1>
-    <p id="description">Please help us improve our website by taking a few minutes for this user survey.</p>
-    <form action="" id="survey-form">
-        <div class="formbox">
-            <label for="name" id="name-label">Name:</label>
-            <input type="text" name="name" id="name" placeholder="write your name here" required>
-        </div>
-        <div class="formbox">
-            <label for="email" id="email-label">Email:</label>
-            <input type="email" name="email" id="email" placeholder="enter your email here" required>
-        </div>
-        <div class="formbox">
-            <label for="age" id="number-label">Age:</label>
-            <input type="number" name="age" id="number" min="10" max="120" placeholder="let us know your age" required>
-        </div>
-        <div class="formbox">
-            <label for="evaluation">How do you like our site?</label>
-            <select name="evaluation" id="dropdown">
-                <option value="good">I like it</option>
-                <option value="evenbetter">I love it</option>
-                <option value="bad">I hate it</option>
-                <option value="notatall">Eat my shorts!</option>
-            </select>
-        </div>
-        <div class="formbox">
-            <p><label for="points">How are you using our site?</label></p>
-            <span>for practice</span><input type="radio" name="points">
-            <span>for fun</span><input type="radio" name="points">
-            <span>to impress my parents</span><input type="radio" name="points">
-        </div>
-        <div class="formbox">
-            <p>On what days of the week do you use our site?</p>
-            <label for="txt">Monday</label>
-            <input type="checkbox">
-            <label for="txt">Tuesday</label>
-            <input type="checkbox">
-            <label for="txt">Wednesday</label>
-            <input type="checkbox">
-            <label for="txt">Thursday</label>
-            <input type="checkbox">
-            <label for="txt">Friday</label>
-            <input type="checkbox">
-            <label for="txt">Saturday</label>
-            <input type="checkbox">
-            <label for="txt">Sunday</label>
-            <input type="checkbox">
-        </div>
-        <div class="formbox">
-            <label for="comment">Anything to add?</label>
-            <textarea name="comment">
-                At w3schools.com you will learn how to make a website. We offer free tutorials in all web development technologies. 
+    <main>
+        <p id="description">Please help us improve our website by taking a few minutes for this user survey.</p>
+        <form action="" id="survey-form">
+            <div class="formbox">
+                <label for="name" id="name-label">Name:</label>
+                <input type="text" name="name" id="name" placeholder="write your name here" required>
+            </div>
+            <div class="formbox">
+                <label for="email" id="email-label">Email:</label>
+                <input type="email" name="email" id="email" placeholder="enter your email here" required>
+            </div>
+            <div class="formbox">
+                <label for="age" id="number-label">Age:</label>
+                <input type="number" name="age" id="number" min="10" max="120" placeholder="let us know your age"
+                    required>
+            </div>
+            <div class="formbox">
+                <label for="evaluation">How do you like our site?</label>
+                <select name="evaluation" id="dropdown">
+                    <option value="good">I like it</option>
+                    <option value="evenbetter">I love it</option>
+                    <option value="bad">I hate it</option>
+                    <option value="notatall">Eat my shorts!</option>
+                </select>
+            </div>
+            <div class="formbox">
+                <p><label for="points">How are you using our site?</label></p>
+                <span>for practice</span><input type="radio" name="points">
+                <span>for fun</span><input type="radio" name="points">
+                <span>to impress my parents</span><input type="radio" name="points">
+            </div>
+            <div class="formbox">
+                <p>On what days of the week do you use our site?</p>
+                <label for="txt">Monday</label>
+                <input type="checkbox">
+                <label for="txt">Tuesday</label>
+                <input type="checkbox">
+                <label for="txt">Wednesday</label>
+                <input type="checkbox">
+                <label for="txt">Thursday</label>
+                <input type="checkbox">
+                <label for="txt">Friday</label>
+                <input type="checkbox">
+                <label for="txt">Saturday</label>
+                <input type="checkbox">
+                <label for="txt">Sunday</label>
+                <input type="checkbox">
+            </div>
+            <div class="formbox">
+                <label for="comment">Anything to add?</label>
+                <textarea name="comment" placeholder="Please write your comment here">
                 </textarea>
-        </div>
-        <div class="formbox">
-            <label for="submit">Are you sure?</label>
-            <button id="submit">Submit</button>
-        </div>
-    </form>
+            </div>
+            <div class="formbox">
+                <label for="submit">Are you sure?</label>
+                <button id="submit">Submit</button>
+            </div>
+        </form>
+    </main>
 </body>
 
 </html>

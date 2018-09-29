@@ -4,15 +4,28 @@
   font-family: "Indie Flower", cursive;
 }
 
+main {
+  border-color: #333;
+  border-style: groove;
+  border-radius: 5px;
+  border-width: 1px;
+}
+
 h1 {
   margin: 0;
 }
 
 #title {
+  color: whitesmoke;
   font-size: 5rem;
   font-weight: 700;
-  padding: 0px 10px;
   margin: 15px 0px;
+  background-color: #b10202;
+  padding: 0px 10px;
+  border-color: #333;
+  border-style: groove;
+  border-radius: 5px;
+  border-width: 1px;
 }
 
 #description {
@@ -37,8 +50,7 @@ form .formbox {
   width: 100%;
 }
 form .formbox label,
-form .formbox span,
-form .formbox button {
+form .formbox span {
   display: inline-block;
   width: 30%;
   padding: 0px 10px;
@@ -59,6 +71,12 @@ form .formbox textarea {
 }
 form .formbox textarea {
   rows: 2;
+}
+form .formbox button {
+  padding: 0px 10px;
+  background-color: #b10202;
+  color: whitesmoke;
+  font-size: 1.4rem;
 }
 form option {
   font-family: "Indie Flower", cursive;

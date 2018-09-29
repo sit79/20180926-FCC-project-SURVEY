@@ -1,7 +1,17 @@
 $content-bg: yellow;
+$font: whitesmoke;
+$borders: #333;
+$highlight: rgb(177, 2, 2);
 
 @mixin myPadding {
     padding: 0px 10px;
+}
+
+@mixin myBorder {
+    border-color: $borders;
+    border-style: groove;
+    border-radius: 5px;
+    border-width: 1px;
 }
 
 * {
@@ -10,15 +20,22 @@ $content-bg: yellow;
     font-family: 'Indie Flower', cursive;
 }
 
+main {
+    @include myBorder;
+}
+
 h1 {
     margin: 0;
 }
 
 #title {
+    color: $font;
     font-size: 5rem;
     font-weight: 700;
-    @include myPadding;
     margin: 15px 0px;
+    background-color: $highlight;
+    @include myPadding;
+    @include myBorder;
 }
 
 #description {
@@ -44,8 +61,7 @@ form {
         width: 100%;
 
         label,
-        span,
-        button {
+        span {
             display: inline-block;
             width: 30%;
             @include myPadding;
@@ -69,6 +85,14 @@ form {
 
         textarea {
             rows: 2;
+        }
+
+        button {
+            // width: 50%;
+            @include myPadding;
+            background-color: $highlight;
+            color: $font;
+            font-size: 1.4rem;
         }
     }
 
